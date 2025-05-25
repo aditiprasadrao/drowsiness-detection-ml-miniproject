@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 import os
 
-model = YOLO(r"C:\Users\Advaita P Rao\Aditi docs\drowsiness_detection_ml_miniproj\yolo11_approach\drowsiness-detection-ml-miniproject\best.pt")
+model = YOLO("best.pt")
 
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
